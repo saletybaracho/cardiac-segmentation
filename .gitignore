@@ -1,7 +1,2 @@
-dataset/*
-P01-images_with_manual_contours/*
-RVSCEvaluationCode/*
-Test1Set/*
-Test2Set/*
-TrainingSet/*
+RVSC_data/*
 

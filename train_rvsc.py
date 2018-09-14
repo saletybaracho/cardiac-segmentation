@@ -1,6 +1,6 @@
 #!/usr/bin/env python2.7
 
-import dicom, cv2, re
+import pydicom, cv2, re
 import os, fnmatch, sys
 import numpy as np
 from keras.preprocessing.image import ImageDataGenerator
@@ -30,7 +30,7 @@ def read_contour(contour, data_path, return_mask=True):
                 if contour.patient_no+'dicom' in dirpath][0]
     filename = 'P{:s}-{:s}.dcm'.format(contour.patient_no, contour.img_no)
     full_path = os.path.join(img_path, filename)
-    f = dicom.read_file(full_path)
+    f = pydicom.read_file(full_path)
     img = f.pixel_array.astype('int')
     if img.ndim < 3:
         img = img[..., np.newaxis]

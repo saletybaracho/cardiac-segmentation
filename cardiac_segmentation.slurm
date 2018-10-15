@@ -45,4 +45,4 @@ module load TensorFlow
 module load Keras
 
 ## Submissao do job 
-time srun python train_rvsc.py i o gpu_id
+time srun python3 train_rvsc.py i o gpu_id

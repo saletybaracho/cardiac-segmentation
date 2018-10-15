@@ -1,0 +1,19 @@
+
+## Jobs ativos de rccoelho: 
+
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+              8906  gpushort  cs-rvsc rccoelho  R    INVALID      1 r01g01
+
+## Node de execucao do job:	r01g01 
+
+
+## Numero de tarefas para este job: 1 
+
+
+## Diretorio de submissao do job: 	/home/rccoelho/projects/cardiac-segmentation \N
+slurmstepd: error: execve(): python333: No such file or directory
+srun: error: r01g01: task 0: Exited with exit code 2
+
+real	0m0.058s
+user	0m0.004s
+sys	0m0.005s

@@ -5,6 +5,7 @@ import os, fnmatch, sys
 import numpy as np
 from keras.preprocessing.image import ImageDataGenerator
 from keras import backend as K
+from itertools import zip_longest as zip
 #from itertools import izip
 
 from fcn_model import fcn_model

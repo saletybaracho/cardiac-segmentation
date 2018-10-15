@@ -1,0 +1,38 @@
+
+## Jobs ativos de rccoelho: 
+
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+              8899  gpushort  cs-rvsc rccoelho  R    INVALID      1 r01g01
+
+## Node de execucao do job:	r01g01 
+
+
+## Numero de tarefas para este job: 1 
+
+
+## Diretorio de submissao do job: 	/home/rccoelho/projects/cardiac-segmentation \N
+--------------------------------------------------------------------------
+A process has executed an operation involving a call to the
+"fork()" system call to create a child process.  Open MPI is currently
+operating in a condition that could result in memory corruption or
+other system errors; your job may hang, crash, or produce silent
+data corruption.  The use of fork() (or system() or other calls that
+create child processes) is strongly discouraged.
+
+The process that invoked fork was:
+
+  Local host:          [[15650,1],0] (PID 45415)
+
+If you are *absolutely sure* that your application will successfully
+and correctly survive a call to fork(), you may disable this warning
+by setting the mpi_warn_on_fork MCA parameter to 0.
+--------------------------------------------------------------------------
+/home/eb/eb-install/software/h5py/2.7.1-foss-2018a-Python-3.6.4/lib/python3.6/site-packages/h5py-2.7.1-py3.6-linux-x86_64.egg/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+Usage: python train_rvsc.py <i/o> <gpu_id>
+srun: error: r01g01: task 0: Exited with exit code 1
+
+real	0m3.551s
+user	0m0.002s
+sys	0m0.007s
